@@ -44,6 +44,19 @@ body {
     right: -20px;
     width: 100px;
     z-index: 1;
+    color: #ffffff;
+}
+
+.explicaPet {
+    position: fixed;
+    bottom: 90px;
+    right: 0;
+    width: 200px;
+    z-index: 1;
+    background-color: rgba(0,0,0,.5);
+    text-align: center;
+    color: #ffffff;
+    display: block;
 }
 
 .petFixed img {
@@ -212,7 +225,7 @@ body {
 .bg_rosinha {
     width: 100%;
     height: 200px;
-    background: url("imagens/5f7de8bbc4032b27dc026abcd42e86d6.jpg") center center no-repeat;
+    background: url("imagens/unicornio.jpg") center center no-repeat;
     background-size: cover;
 }
 

@@ -24,8 +24,12 @@
 			</div>
 		</div>
 	</div>
+	<div class="explicaPet">
+		<p>Clica no PET</p>
+		<p>Para falar comigo!</p>
+	</div>
 	<div class="petFixed">
-		<a href="https://wa.me/qr/H65IN5VR66POG1" target="_blank"><img id="petEscolhido" ></a>
+		<a href="https://wa.me/5535997500604" target="_blank"><img id="petEscolhido" ></a>
 	</div>
 	<div class="background">
 		<div class="container d-flex justify-content-center">
@@ -128,18 +132,19 @@
 				<div style="text-align: center; margin-top: 15px;">
 					<h3>Eu gosto de você </h3>
 					<p>Não apenas por ser essa beldade que é</p>
-					<p>Mas sim pelo seu jeito: </p>
-					<p>De falar;</p>
-					<p>De ser um amorzinho com muita gente;</p>
-					<p>De ser essa pessoinha simpatica que é;</p>
-					<p>Por ter um lindo sorriso PRETO E BRANCO kkkkk</p>
+					<p>Mas sim pelo seu jeititnho</p>
+					<p>De falar</p>
+					<p>De ser um amorzinho com muita gente</p>
+					<p>De ser essa pessoinha simpatica que é</p>
+					<p>Por ter um lindo sorriso</p>
 					<p>E esse lindos olhos</p>
 					<p>“olhos de cigana oblíqua e dissimulada.”</p>
 					<p>Fora essa cinturinha né, pqp que cinturinha ♥ </p>
+					<p>Você é uma moça incrível que corre atrás do que quer e consegue!</p>
 					<p>Maldita gótica trevosa que me cativou tanto</p>
 					<br/><br/>
 					<p>*E MALDITO SEJA ESSE UNICÓRNIO</p>
-					<P>LEU E VOMITOU NO TEXTO</P>
+					<P>LEU E VOMITOU NO TEXTO, NEM ELE TEVE ESTÔMAGO PARA ESSA MINHA GAYZISSE</P>
 				</div>
 			</div>
 		</div>
@@ -160,10 +165,7 @@
 					<p>Só quero sair e me divertir com você antes de acabar o ano...</p>
 					<p>RESPONDE AÍ</p>
 					<button class="btn yes">
-						BORA SAIR SÁBADO
-					</button>
-					<button class="btn yes">
-						NESSE SÁBADO E DOMINGO
+						VOU FAZER DE TUDO PARA SAIRMOS SÁBADO OU DOMINGO
 					</button>
 					<button class="btn no">
 						NÃO VAI DAR
@@ -172,7 +174,7 @@
 			</div>
 			<div class="resposta1">
 				<div style="width: 150px; float: left; color: #ffffff;">
-					<p>vai mesmo clicar no ROSA??? NO ROSA!! NÃO CREIO</p>
+					<p id="textoRosa"></p>
 				</div>
 				<div class="comida2">
 					<img src="imagens/180554c3-89fe-4b04-a76f-1c30c0be1d42.webp">
@@ -182,7 +184,7 @@
 			<div class="resposta2">
 				<div style="width: 150px; float: left; color: #ffffff;">
 					<p>UHUUUUUUUUUUUU!!</p>
-					<p>Mas me avisa no WhatsApp, porque não coloquei envio por aqui</p>
+					<p>Agora vou te mandar para o WhatsApp para você me contar isso ♥ </p>
 				</div>
 				<div class="comida2">
 					<img src="imagens/bd089f81-eb5e-42f8-875b-26fa91790805.webp">
@@ -201,11 +203,13 @@
 	<script>
 		$(document).ready(function() {
 			new CircleType(document.getElementById('diversaoText')).radius(180);
+			var no = 0;
 
 			$(".anjo").click(function(){
 				$("body").css("overflow", "auto");
 				$(".escolha").css("display", "none");
 				$("#petEscolhido").attr('src', 'imagens/mini-anjo.webp');
+				setTimeout(function(){ $(".explicaPet").css("display", "none"); }, 2000);
 			});
 
 			$(".sereia").click(function(){
@@ -213,12 +217,14 @@
 				$(".escolha").css("display", "none");
 				$("#petEscolhido").attr('src', 'imagens/mini-sereia.webp');
 				$("#petEscolhido").css("transform", "rotate(0deg)");
+				setTimeout(function(){ $(".explicaPet").css("display", "none"); }, 2000);
 			});
 
 			$(".capeta").click(function(){
 				$("body").css("overflow", "auto");
 				$(".escolha").css("display", "none");
 				$("#petEscolhido").attr('src', 'imagens/mini-capeta.webp');
+				setTimeout(function(){ $(".explicaPet").css("display", "none"); }, 2000);
 			});
 
 			$(".clickBottom").click(function(){
@@ -228,12 +234,31 @@
 				}, 2000);
 			});
 			$("button.no").click(function(){
+				no = no + 1;
 				$(".resposta1").css("display", "block");
-				setTimeout(function(){ $(".resposta1").css("display", "none"); }, 5000);
+				switch(no){
+					case 1:
+						$("#textoRosa").text("vai mesmo clicar no ROSA??? NO ROSA!! NÃO CREIO");
+						break;
+					case 2:
+						$("#textoRosa").text("Vou te dar mais uma chance de clicar no botão PRETO e não no ROSA");
+						break;
+					case 3:
+						$("#textoRosa").text("Entendi :( Vou redirecionar para WhatsApp para me contar essa trágedia");
+						break;
+				}	
+				setTimeout(function(){ 
+					$(".resposta1").css("display", "none"); 
+					if(no == 3)
+						window.location.href = 'https://wa.me/5535997500604?text=Mo%C3%A7o%2C%20n%C3%A3o%20vai%20dar%20para%20sairmos.%20Desculpa%0AMas%20semana%20na%20pr%C3%B3xima%20quem%20sabe!';
+				}, 3000);
 			});
 			$("button.yes").click(function(){
 				$(".resposta2").css("display", "block");
-				setTimeout(function(){ $(".resposta2").css("display", "none"); }, 8000);
+				setTimeout(function(){ 
+					$(".resposta2").css("display", "none");
+					window.location.href = "https://wa.me/5535997500604?text=Irei%20fazer%20o%20p%C3%B3ssivel%20para%20sairmos%20no%20*s%C3%A1bado*%20ou%20*domingo*!!";
+				}, 3000);
 			});
 		});
 	</script>
