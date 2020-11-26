@@ -9,6 +9,24 @@
 	<link rel="stylesheet" href="font-awesome/font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+	<div class="escolha">
+		<div class="container pet" style="text-align: center;">
+			<h3>Me preocupo com você</h3>
+			<p>Escolha pet para te acompanhar</p>
+			<div class="card anjo">
+				<img src="imagens/anjo.webp" alt="">
+			</div>
+			<div class="card sereia">
+				<img src="imagens/sereia.webp" alt="">
+			</div>
+			<div class="card capeta">
+				<img src="imagens/capeta.webp" alt="">
+			</div>
+		</div>
+	</div>
+	<div class="petFixed">
+		<a href="https://wa.me/qr/H65IN5VR66POG1" target="_blank"><img id="petEscolhido" ></a>
+	</div>
 	<div class="background">
 		<div class="container d-flex justify-content-center">
 			<div class="border border-secondary text-center myContentTop">
@@ -183,6 +201,25 @@
 	<script>
 		$(document).ready(function() {
 			new CircleType(document.getElementById('diversaoText')).radius(180);
+
+			$(".anjo").click(function(){
+				$("body").css("overflow", "auto");
+				$(".escolha").css("display", "none");
+				$("#petEscolhido").attr('src', 'imagens/mini-anjo.webp');
+			});
+
+			$(".sereia").click(function(){
+				$("body").css("overflow", "auto");
+				$(".escolha").css("display", "none");
+				$("#petEscolhido").attr('src', 'imagens/mini-sereia.webp');
+				$("#petEscolhido").css("transform", "rotate(0deg)");
+			});
+
+			$(".capeta").click(function(){
+				$("body").css("overflow", "auto");
+				$(".escolha").css("display", "none");
+				$("#petEscolhido").attr('src', 'imagens/mini-capeta.webp');
+			});
 
 			$(".clickBottom").click(function(){
 				// $( "#diversao" ).scroll();
