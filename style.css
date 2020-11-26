@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;300;400;700&display=swap');
+
+* {
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+body {
+    background-color: #1d1c1c;
+}
+
+.background {
+    background: url("imagens/wallpaper1.jpg") center center no-repeat;
+    width: 100%;
+    height: 100%;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.myContentTop {
+    margin-top: 200px;
+    margin-bottom: 200px;
+    color: #ffffff;
+    padding: 10px;
+}
+
+.myContentTop h3 {
+    font-weight: 300;
+}
+
+.myContentTop h3 span {
+    font-weight: 700;
+}
+
+.seta .circle {
+    position: absolute;
+    top: 530px;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff;
+    border-radius: 20px;
+}
+
+.first {
+    color: #ffffff;
+    position: relative;
+    margin-top: 80px;
+    padding: 15px;
+}
+
+.first .row h1 {
+    font-weight: 200;
+    margin-left: 160px;
+    margin-bottom: 0px;
+}
+
+.first .row p {
+    font-size: 14px;
+    margin-top: 10px;
+    color: red;
+}
+
+.first img {
+    width: 100%;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.second {
+    background-color: #ffffff;
+}
+
+.second .comida {
+    margin-left: -15px;
+}
+
+.second .comida img {
+    width: 45%;
+    transform: rotate(20deg);
+}
+
+.second .comida3 img {
+    width: 45%;
+    transform: rotate(50deg);
+}
+
+.second .comida3 {
+    margin-bottom: 40px;
+}
+
+.comida2 {
+    position: relative;
+    float: right;
+    width: 180px;
+}
+
+.comida2 img {
+    width: 100%;
+}
+
+.second .bora_comer img {
+    width: 100%;
+}
+
+.bebida1 {
+    width: 180px;
+    float: left;
+}
+
+.bebida1 img {
+    width: 100% !important;
+}
+
+.charles {
+    position: relative;
+    float: right;
+    width: 180px;
+    height: 200px;
+}
+
+.bebida2 {
+    margin-top: -99px;
+}
+
+.bg_bebida {
+    width: 100%;
+    height: 115px;
+    background: url("imagens/saide-cerveja-gim-20180225-004.jpg");
+
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.terceiro {
+    margin-top: 90px;
+    background-color: #1d1c1c;
+    color: #ffffff;
+}
+
+.bg_cemiterio {
+    width: 100%;
+    height: 115px;
+    background: url("imagens/depositphotos_40539573-stock-illustration-spooky-graveyard.jpg");
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.quarto {
+    margin-top: 90px;
+    background-color: #1d1c1c;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: -webkit-gradient(linear,left top,right top,from(#ea1111), to(#f08228));
+    background-image: -webkit-linear-gradient(left,#ea1111,#f08228,#d4d121,#36b82a,#2d70a7);
+    background-image: -moz-linear-gradient(left,#ea1111,#f08228,#d4d121,#36b82a,#2d70a7);
+    background-image: -ms-linear-gradient(left,#ea1111,#f08228,#d4d121,#36b82a,#2d70a7);
+    background-image: -o-linear-gradient(left,#ea1111,#f08228,#d4d121,#36b82a,#2d70a7);
+}
+
+.bg_rosinha {
+    width: 100%;
+    height: 200px;
+    background: url("imagens/5f7de8bbc4032b27dc026abcd42e86d6.jpg") center center no-repeat;
+    background-size: cover;
+}
+
+.quinto {
+    margin-top: 90px;
+    background-color: #ffffff;
+    color: #1d1c1c;
+}
+
+.bg_fim {
+    width: 100%;
+    height: 200px;
+    background: url("imagens/1-aa-07sfmbo5a6f_lnr4esg894611974.png") center center no-repeat;
+    background-size: cover;
+}
+
+.quinto button {
+    margin-bottom: 10px;
+    background-color: #1d1c1c;
+    color: #ffffff !important;
+}
+
+.quinto button.no {
+    background-color: #f709af;
+    color: #1d1c1c;
+}
+
+.resposta1 {
+    display: none;
+    position: fixed;
+    background-color: #f709af;
+    color: #1d1c1c;
+    top: 0;
+    width: 100%;
+    padding: 15px;
+}
+
+.resposta2 {
+    display: none;
+    position: fixed;
+    background-color: #1d1c1c;
+    top: 0px;
+    width: 100%;
+    padding: 15px;
+}
+
+
+/* ROTATE LETTER */
